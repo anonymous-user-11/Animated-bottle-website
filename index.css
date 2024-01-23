@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html ,body{
+    height: 100%;
+    width: 100%;
+}
+.mmy{
+    filter: drop-shadow(0 0 1.6rem black);
+}
+.anim1{
+    animation-delay: 1s;
+    transition: ease;
+animation: mymove 3s 1;
+}
+.anim2{
+    animation-delay: 1s;
+    transition: ease;
+    animation: anim20 2s 1;
+}
+@keyframes mymove {
+    from {top: -300px;opacity: 0;}
+    to {top: 160px;}
+  }
+@keyframes anim20 {
+    from {top:50%;opacity: 0;}
+    to {top: 224px;}
+  }
